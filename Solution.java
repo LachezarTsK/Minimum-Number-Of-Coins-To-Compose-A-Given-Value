@@ -33,7 +33,7 @@ public class Solution {
 			for (int i = 0; i < numberOfCoinValues && coinValues[i] <= subValue; i++) {
 
 				if (minimumCoins[subValue - coinValues[i]] != Integer.MAX_VALUE) {
-					if (minimumCoins[subValue - coinValues[i]] + 1 <= minimumCoins[subValue]) {
+					if (minimumCoins[subValue - coinValues[i]] + 1 < minimumCoins[subValue]) {
 						minimumCoins[subValue] = minimumCoins[subValue - coinValues[i]] + 1;
 					}
 				}
