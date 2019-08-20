@@ -13,8 +13,8 @@ public class Solution {
 		targetValue = scanner.nextInt();
 
 		int[] coinValues = new int[numberOfCoinValues];
-		for (int value = 0; value < numberOfCoinValues; value++) {
-			coinValues[value] = scanner.nextInt();
+		for (int i = 0; i < numberOfCoinValues; i++) {
+			coinValues[i] = scanner.nextInt();
 		}
 		scanner.close();
 
